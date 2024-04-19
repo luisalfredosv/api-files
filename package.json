@@ -1,0 +1,21 @@
+{
+	"name": "api-files",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./src/server.js",
+	"type": "module",
+	"scripts": {
+		"start": "",
+		"test": "test"
+	},
+	"engines": {
+		"node": "14.21.3"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.19.2"
+	},
+	"devDependencies": {}
+}
