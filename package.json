@@ -5,8 +5,9 @@
 	"main": "./src/server.js",
 	"type": "module",
 	"scripts": {
-		"start": "",
-		"test": "test"
+		"start": "node ./src/server.js",
+		"test": "test",
+		"dev": "npx nodemon ./src/server.js"
 	},
 	"engines": {
 		"node": "14.21.3"
