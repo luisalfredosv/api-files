@@ -33,3 +33,24 @@ npx nodemon ./src/server.js
 ```
 
 Wait a few seconds and you will see the message in the terminal that the host where it is running and the default port: 3002
+
+## Execution whit Docker
+
+This project can be easily containerized using Docker. Follow these steps to build and run the Docker container:
+
+1. Ensure Docker is running on your machine.
+2. Build the Docker image:
+
+```bash
+docker-compose build
+```
+
+3. Once the image is built successfully, you can start the Docker container:
+
+```bash
+docker-compose up
+```
+
+This will start the application inside a Docker container, and it will be accessible at <http://localhost:3002>.
+
+4. To stop the container, press Ctrl + C in the terminal where it's running.
