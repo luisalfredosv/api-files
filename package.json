@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"start": "node ./src/server.js",
-		"test": "test",
+		"test": "mocha",
 		"dev": "npx nodemon ./src/server.js"
 	},
 	"engines": {
@@ -18,5 +18,8 @@
 		"cors": "^2.8.5",
 		"express": "^4.19.2"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"chai": "^5.1.0",
+		"mocha": "^10.4.0"
+	}
 }
