@@ -16,9 +16,19 @@ export const parseCSV = (csvText) => {
 };
 
 export const formatData = (data) => {
-	return data.map((item) => ({
-		text: item.text,
-		number: parseInt(item.number),
-		hex: item.hex || null,
-	}));
+	return data
+		.filter(
+			(item) =>
+				item.hasOwnProperty("text") &&
+				item.hasOwnProperty("number") &&
+				item.hasOwnProperty("hex") &&
+				item.text !== null &&
+				item.number !== null &&
+				item.hex !== null
+		)
+		.map((item) => ({
+			text: item.text,
+			number: parseInt(item.number),
+			hex: item.hex,
+		}));
 };
